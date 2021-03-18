@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>tzatzk.in</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+  
+  <style type="text/css">
+    
+    body {
+      background-color: #1f1f1f;
+      margin: 0;
+      padding: 0;
+      font-family: 'Lato', sans-serif;
+      color: #d3d3d3;
+      text-align: center;
+    }
+
+    h1 {
+      position: absolute;
+      font-weight: 100;
+      display: inline-block;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      contenteditable: -webkit-user-modify;
+    }
+
+    .tz {
+      vertical-align: bottom;
+      overflow: hidden;
+      display: inline-block;
+      max-width: 0;
+      -webkit-animation: width 5s 3s linear forwards;
+      animation: width 5s 3s linear forwards;
+    }
+
+    .dot {
+      opacity: 0;
+      -webkit-animation: op 250ms 5s forwards;
+      animation: op 250ms 5s forwards;
+    }
+
+    .tzin {
+      -webkit-animation: col .5s 7s forwards;
+      animation: col .5s 7s forwards; 
+    }
+    
+    @-webkit-keyframes width {
+      to { max-width: 500px; }
+    }
+    @keyframes width {
+      to { max-width: 500px; }
+    }
+
+    @-webkit-keyframes op {
+      to { opacity: 1; }
+    }
+    @keyframes op {
+      to { opacity: 1; }
+    }
+
+    @-webkit-keyframes col {
+      to { color: #3498db; }
+    }
+    @keyframes col {
+      to { color: #3498db; }
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  <header>
+    <h1>I am <span class="tzin"><span class="tz">Tzatzk</span><span class="dot">.</span>in</span></h1>
+  </header>
+
+</body>
+</html>
